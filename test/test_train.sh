@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Tested, setup from  https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html?index=..%2F..%2Findex#0
+python -m scripts.retrain --bottleneck_dir=tf_files/bottlenecks --how_many_training_steps=4000 --model_dir=tf_files/models/ --summaries_dir=tf_files/training_summaries/"mobilenet_0.50_224" --output_graph=tf_files/retrained_graph_mobilenet.pb --output_labels=tf_files/retrained_labels_mobilenet.txt --architecture="mobilenet_0.50_224" --image_dir=tf_files/flower_photos
